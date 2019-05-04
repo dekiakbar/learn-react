@@ -1,11 +1,16 @@
 import React from 'react';
 import 'bootstrap/scss/bootstrap.scss';
+import './assets/sass/style.scss';
+import Navbar from './components/Navbar';
+import Clock from './components/Clock';
+import {Route,BrowserRouter} from 'react-router-dom';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-       <button className="btn btn-sm btn-primary">test</button>
-      </header>
+      <BrowserRouter>
+        <Navbar />
+        <Route path="/clock" component={Clock}/>
+      </BrowserRouter>
     </div>
   );
 }
