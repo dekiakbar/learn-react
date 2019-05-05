@@ -22,6 +22,12 @@ class Navbar extends Component{
                             <li className="nav-item">
                                 <Link className="nav-link" to="/event">Event</Link>
                             </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/json">JSON</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/json-git">JSON Git</Link>
+                            </li>
                         </ul>
                     </div>
                 </nav>
