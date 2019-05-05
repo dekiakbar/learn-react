@@ -7,10 +7,18 @@ class Navbar extends Component{
     render(){
         return (
             <div>
-                <nav className="navbar navbar-default">
+                <nav className="navbar-expand-lg navbar-dark bg-dark static-top">
                     <div className="container-fluid">
                         <ul className="nav navbar-nav">
-                            <Link to="/clock">Clock</Link>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/clock">Clock</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/hello">Hello</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/state">State</Link>
+                            </li>
                         </ul>
                     </div>
                 </nav>
