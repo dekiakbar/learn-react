@@ -9,9 +9,14 @@ class Hello extends Component{
     }
     render(){
         return(
-            <div className="row justify-content-center align-self-center">
-                <div className="col-md-10 col-sm-12 col-lg-8 text-center">
-                    <button className="btn btn-lg btn-info">{this.state.salam} : <strong>{this.state.nama}</strong> </button>
+            <div className="container h-100">
+                <div className="row align-items-center h-100">
+                    <div className="col-6 mx-auto">
+                        <div className="jumbotron text-center">
+                            <p><strong>State</strong></p>
+                            <button className="btn btn-lg btn-info">{this.state.salam} : <strong>{this.state.nama}</strong> </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         )

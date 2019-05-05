@@ -23,10 +23,15 @@ class Clock extends Component{
     
     render(){
         return(
-            <div className="row justify-content-center">
-                <div className="col-sm-12 col-md-10 col-lg-8 text-center">
-                    <div className="btn btn-lg btn-info">
-                        {this.state.time.toLocaleTimeString()}
+            <div className="container h-100">
+                <div className="row align-items-center h-100">
+                    <div className="col-6 mx-auto">
+                        <div className="jumbotron text-center">
+                            <p><strong>Update State</strong></p>
+                            <div className="btn btn-lg btn-info">
+                                {this.state.time.toLocaleTimeString()}
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
