@@ -10,6 +10,7 @@ class Navbar extends Component{
                 <nav className="navbar-expand-lg navbar-dark bg-dark static-top">
                     <div className="container-fluid">
                         <ul className="nav navbar-nav">
+                            <Link className="navbar-brand" to="/">React JS</Link>
                             <li className="nav-item">
                                 <Link className="nav-link" to="/clock">Clock</Link>
                             </li>
@@ -27,6 +28,9 @@ class Navbar extends Component{
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to="/json-git">JSON Git</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/todo">Todo</Link>
                             </li>
                         </ul>
                     </div>

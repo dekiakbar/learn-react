@@ -22,11 +22,11 @@ class JsonGit extends Component{
                 <div className="row align-items-center h-100">
                     <div className="col-6 mx-auto">
                         <div className="jumbotron">
-                            <ul class="list-group">
-                                <li class="list-group-item active">Fetch Data JSON Github</li>
+                            <ul className="list-group">
+                                <li className="list-group-item active">Fetch Data JSON Github</li>
                                 {
                                     this.state.data.map((data, key) =>
-                                        <li class="list-group-item">Nama : <strong>{data.nama}</strong> | Harga : <strong>{data.harga}</strong></li>
+                                        <li key={key} className="list-group-item">{data.id}. Nama : <strong>{data.nama}</strong> | Harga : Rp. <strong>{data.harga}K</strong> <img className="img-thumbnail" src={data.fotoUrl} alt={data.nama} /></li>
                                     )
                                 }
                             </ul>

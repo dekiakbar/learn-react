@@ -3,3 +3,21 @@
 body{
     font-family: 'Nunito Sans',sans-serif;
 }
+
+.animasi-enter{
+    opacity: 0.01;
+
+    &.animasi-enter-active{
+        opacity: 1;
+        transition: opacity 500ms ease-in;
+    }
+}
+
+.animasi-exit{
+    opacity: 1;
+
+    &.animasi-exit-active{
+        transform: translateX(-100%);
+        transition: all 500ms ease-in;
+    }
+}

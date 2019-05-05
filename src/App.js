@@ -8,6 +8,7 @@ import State from './components/State';
 import Event from './components/Event';
 import Json from './components/Json';
 import JsonGit from './components/JsonGit';
+import Todo from './components/Todo';
 import {Route,BrowserRouter} from 'react-router-dom';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path="/event" component={Event}/>
         <Route path="/json" component={Json}/>
         <Route path="/json-git" component={JsonGit}/>
+        <Route path="/todo" component={Todo}/>
       </BrowserRouter>
     </div>
   );

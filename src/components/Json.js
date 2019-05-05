@@ -35,11 +35,11 @@ class Json extends Component{
                 <div className="row align-items-center h-100">
                     <div className="col-6 mx-auto">
                         <div className="jumbotron">
-                            <ul class="list-group">
-                                <li class="list-group-item active">Fetch Data JSON</li>
+                            <ul className="list-group">
+                                <li className="list-group-item active">Fetch Data JSON</li>
                                 {
                                     this.state.siswa.map((data, key) =>
-                                        <li class="list-group-item">NIS : <strong>{data.nis}</strong> | nama : <strong>{data.nama}</strong></li>
+                                        <li key={key} className="list-group-item">NIS : <strong>{data.nis}</strong> | Nama : <strong>{data.nama}</strong></li>
                                     )
                                 }
                             </ul>

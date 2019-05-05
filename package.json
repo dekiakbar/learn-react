@@ -5,12 +5,14 @@
   "dependencies": {
     "bootstrap": "^4.3.1",
     "jquery": "^1.9.1",
+    "moment": "^2.24.0",
     "node-sass": "^4.11.0",
     "popper.js": "^1.15.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",
-    "react-scripts": "3.0.0"
+    "react-scripts": "3.0.0",
+    "react-transition-group": "^4.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
